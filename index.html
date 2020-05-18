@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>HTML Session</title>
+        <style>
+            body{
+                background: url(https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+                
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat;
+                background-size: cover; /* Resize the background image to cover the entire container */
+
+            }
+
+            .maincontainer{
+               
+                margin-left: 25%;
+                margin-right: 25%;
+                margin-bottom: 8%;
+                margin-top: 10%;
+                background: #2980B9;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                min-height: 550px;
+                max-height: 1000px;
+                position: relative;
+                width: 50%;
+                font-family: 'Kaushan Script', cursive;
+            }
+
+            .fromcontainer{
+                
+                margin-left: 2%;
+                margin-right: 2%;
+                height: 400px;
+                min-height: 400px;
+                max-height: 800px;
+
+            }
+
+            .row{
+                margin: 1%;
+                border-radius: 40%;
+            }
+            h1{
+            	
+            	margin: 10px 20px 15px 20px;
+            }
+
+
+            .fields,.selectcss{
+            	width: 275px;
+            	height: 36px;
+            	background-color: #eef2f3;
+            	border-radius: 9px;
+            	padding: 10px;
+            	font-size: 12px;
+            }
+
+            .infieldname{
+            	font-size: 20px !important;
+            	font-weight: 400 !important;
+            }
+            .selectcss{
+            	width: 80%; 
+
+            }
+            .btn{
+            	width: 110px;
+            	font-size: 15px;
+            	margin-bottom: 10px;
+            	background: #2980B9;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            	
+            }
+           button:hover{
+           background: #1c92d2;  /* fallback for old browsers */
+           background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+           background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="maincontainer">
+           
+            <center>
+                <h1 ><b>Register Yourself</b></h1><br><br>
+            </center>
+            
+            <div class="fromcontainer">
+                <div class="row">
+                    <div class="col-sm-6";>
+                        <label class="infieldname" for="FirstName">FirstName</label><br />
+                        <input type="text" id="FirstName" placeholder="Enter your First Name"
+                        class="fields">
+                    </div>
+
+                    <div class="col-sm-6" ;>
+                        <label class="infieldname" for="LastName">LastName</label><br />
+                        <input type="text" id="LastName" placeholder="Enter your Last Name"
+                         class="fields">
+                         
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6" ;>
+                        <label class="infieldname" for="DOB">Date of Birth</label><br />
+                        <input type="date" id="DOB" placeholder="Enter your Date of birth"
+                         class="fields">
+                    </div>
+
+                    <div class="col-sm-6" ;>
+                        <label class="infieldname" >Gender</label><br />
+                      
+                      <input type="radio" id="M" />
+                      <label class="infieldname">Male</label><br />
+                      <input type="radio" id="F" />
+                      <label class="infieldname">Female</label>
+                      
+
+
+                         
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6" ;>
+                        <label class="infieldname" for="Email">Email</label><br />
+                        <input type="text" id="Email" placeholder="Enter your Email"
+                         class="fields">
+                    </div>
+
+                    <div class="col-sm-6" ;>
+                        <label class="infieldname" for="PhoneNumber">PhoneNumber</label><br />
+                        <input type="Number" id="PhoneNumber" placeholder="Enter your PhoneNumber"
+                         class="fields">
+                         
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" ;>
+                        <label class="infieldname" for="Subject">Select your Subject</label><br />
+                        <select class="selectcss" id="Sub" >
+                        	<option> --None--</option>
+                            <option value="Maths">Maths</option>
+                            <option value="Algo">Algo</option>
+                            <option value="Java">Java</option>
+                            <option value="Microcontroller">Microcontoller</option>
+                            
+
+                        </select>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" ;>
+                                <input type="checkbox"><label>to agree with <a href="https://www.w3schools.com/tags/att_select_multiple.asp" target="_blank"
+                                	>
+                                    terms and conditions</a> please check the box</label>
+                                <br />
+                                <button class="btn"  style="background-color:#bdc3c7" onclick="myfunction()">Submit</button>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                        	function myfunction(){
+                        		var FirstName = document.getElementById("FirstName").value;
+                        		var LastName = document.getElementById("LastName").value;
+                        		var DOB = document.getElementById("DOB").value;
+                        		var Email = document.getElementById("Email").value;
+                        		var PhoneNumber= document.getElementById("PhoneNumber").value;
+                        		var Subject = document.getElementById("Sub").value;
+                        		var Male = document.getElementById("M").checked;
+                        		var Female = document.getElementById("F").checked;
+
+                        		console.log("FirstName=" +FirstName );
+                        		console.log("LastName=" +LastName);
+                                console.log("DOB=" +DOB);
+                        		console.log("Email=" +Email);
+                        		console.log("PhoneNumber=" +PhoneNumber);
+                        		console.log("Subject=" +Subject);
+                        		console.log("Male=" +Male);
+                        		console.log("Female=" +Female);
+                        		
+                        	}
+                        	
+
+                        </script>
+
+
+
+    </body>
+</html>
